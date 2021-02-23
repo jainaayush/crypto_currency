@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f9f9f9; }
+.mat-slide-toggle-bar{
+    height: 25px !important;
+    background-color: #cfd6df !important;
+    width: 44px !important;
+    border-radius: 15px !important;
+    .mat-slide-toggle-thumb-container{
+        top: 2px !important;
+        left: 2px !important;
+    }
+}

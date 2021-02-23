@@ -1,0 +1,101 @@
+    <div class='container d-block'>
+        <div class="d-flex justify-content-between header align-items-center" *ngIf="optionValue == 'header'">
+            <div>
+                <h5 class="mb-0">PASSENGER INFO</h5>
+            </div>
+            <div class="toggle-info d-flex align-items-center justify-content-between">
+                <span class="mr-4">Hide Information</span><mat-slide-toggle></mat-slide-toggle>
+            </div>
+            
+            
+        </div>
+        <div class="d-block content"  *ngIf="optionValue == 'content'">
+            <div class="row">
+                <div class='col-md-5 col-12'>
+                    <div class="d-flex">
+                        <div>
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                        </div>
+                        <div class="d-block ml-2 passenger_details">
+                            <h3 class="mb-0 text-dark-info">Nora M. Bushanan</h3>
+                            <p class="text-light-info">4 interactions</p>
+                        </div>
+                    </div>
+                    <div class="d-block mt-3">
+                        <p class="text-light-info mb-1">EMAIL</p>
+                        <p class="text-dark-info">{{getEmail}}</p>
+                    </div>
+                    <div>
+                        <p class="text-light-info mb-1">PHONE</p>
+                        <p class="text-dark-info">{{getPhone}}</p>
+                    </div>
+                    <div>
+                        <p class="text-light-info mb-1">LOCATION</p>
+                        <p class="text-dark-info">{{getLocation}}</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-6">
+                            <mat-card class="d-flex align-items-center justify-content-center"><img src="assets/images/paypal.png" width="110px" /></mat-card>
+                        </div>
+                        <div class="col-md-6 col-6 ">
+                            <mat-card class="d-flex align-items-center justify-content-center active-color"><img src="assets/images/visa.png" width="70px" /></mat-card>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <mat-card class="d-flex align-items-center justify-content-center"><img src="assets/images/master-card.png" width="70px" /></mat-card>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <mat-card class="d-flex align-items-center justify-content-center"><img src="assets/images/apple-pay.png" width="70px" /></mat-card>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-block mx-auto my-5 address-details">
+                <div class="address-info">
+                    <div class="d-flex align-items-center w-80">
+                        <div class="check-in mr-2">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                        <div class="location ml-2">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-7 col-7">
+                            
+                            <h3 class="mb-0 text-dark-info font-weight-bold">Jackson Heights</h3>
+                            <p class="text-light-info">37-27 74th Street</p>
+                        </div>
+                        <div class="col-md-5 col-5">
+                            <h3 class="mb-0 text-dark-info font-weight-bold">Greenpoints</h3>
+                            <p class="text-light-info">81 Gate St Brooklyn</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4 mx-0">
+                    <div class="col-md-3 col-6 px-4">
+                        <p class="mb-0 text-dark-info font-weight-bold">12.3 km</p>
+                        <p class="text-light-info">Distance</p>
+                    </div>
+                    <div class="col-md-3 col-6 px-4">
+                        <p class="mb-0 text-dark-info font-weight-bold">42min</p>
+                        <p class="text-light-info">Time</p>
+                    </div>
+                    <div class="col-md-3 col-6 px-4">
+                        <p class="mb-0 text-dark-info font-weight-bold">$32.20</p>
+                        <p class="text-light-info">Price</p>
+                    </div>
+                    <div class="col-md-3 col-6 px-4">
+                        <p class="mb-0 text-dark-info font-weight-bold">12.4kWh</p>
+                        <p class="text-light-info">Energy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
